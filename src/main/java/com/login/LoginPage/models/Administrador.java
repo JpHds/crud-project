@@ -29,12 +29,12 @@ public class Administrador {
     @Column(name = "observacao", columnDefinition = "LONGTEXT")
     private String observacao;
 
-    public String getSenha() {
-        String asteriscos = "*";
-        for(int i = 0; i < senha.length()-4; i++) {
-            asteriscos = asteriscos + "*";
-        }
-        return senha.substring(0, 3) + asteriscos;
+    // public String getSenha() {
+    //     String asteriscos = "*";
+    //     for(int i = 0; i < senha.length()-4; i++) {
+    //         asteriscos = asteriscos + "*";
+    //     }
+    //     return senha.substring(0, 3) + asteriscos;
         
-    }
+    // }
 }
