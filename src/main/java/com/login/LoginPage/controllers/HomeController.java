@@ -1,4 +1,4 @@
-package com.login.LoginPage.controllers;
+package com.login.loginpage.controllers;
 
 import java.io.UnsupportedEncodingException;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.login.LoginPage.service.CookieService;
+import com.login.loginpage.service.CookieService;
 
 import jakarta.servlet.http.HttpServletRequest;
 

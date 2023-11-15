@@ -1,4 +1,4 @@
-package com.login.LoginPage.service;
+package com.login.loginpage.service;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

@@ -1,8 +1,8 @@
-package com.login.LoginPage.service.auth;
+package com.login.loginpage.service.auth;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import com.login.LoginPage.service.CookieService;
+import com.login.loginpage.service.CookieService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

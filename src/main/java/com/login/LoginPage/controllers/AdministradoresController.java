@@ -1,4 +1,4 @@
-package com.login.LoginPage.controllers;
+package com.login.loginpage.controllers;
 
 import java.io.UnsupportedEncodingException;
 import java.util.List;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.login.LoginPage.models.Administrador;
-import com.login.LoginPage.repositorio.AdministradoresRepo;
-import com.login.LoginPage.service.CookieService;
+import com.login.loginpage.models.Administrador;
+import com.login.loginpage.repositorio.AdministradoresRepo;
+import com.login.loginpage.service.CookieService;
 
 import jakarta.servlet.http.HttpServletRequest;
 
