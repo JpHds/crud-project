@@ -1,5 +1,6 @@
 package com.login.LoginPage.controllers;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.login.LoginPage.models.Administrador;
 import com.login.LoginPage.repositorio.AdministradoresRepo;
+import com.login.LoginPage.service.CookieService;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class AdministradoresController {
@@ -19,10 +23,10 @@ public class AdministradoresController {
     private AdministradoresRepo repo;
 
     @GetMapping("/administradores")
-    public String index(Model model, Model model2) {
+    public String index(Model model, Model modelName, HttpServletRequest request) throws UnsupportedEncodingException {
         List<Administrador> administradores = (List<Administrador>)repo.findAll();
         model.addAttribute("administradores", administradores);
-        model2.addAttribute("nome", "João Paulo");
+        modelName.addAttribute("nome", CookieService.getCookie(request, "userName"));
         return "administradores/index";
     }
 
